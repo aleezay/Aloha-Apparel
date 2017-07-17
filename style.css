@@ -154,7 +154,7 @@ table {
 }*/
 
 * {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 html{
@@ -200,17 +200,17 @@ h3 {
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  display: inline-block;d7
+  display: inline-block;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  margin: 0;
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
+margin: 0;
 padding: 2%;
 background-color: white;
-width: 100%;
+/*width: 100%;*/
 }
 
 .logo {
@@ -266,7 +266,7 @@ ul{
   background: url(images/banner-girl.png) no-repeat center 50px, 
              url(images/flower-bkgd.jpg) repeat-x;
   background-size: contain, cover;
-  min-width: 100%;
+  width: 100%;
   max-height: 400px;
   display: flex;
 }
@@ -282,7 +282,6 @@ left:50%;
 }
 
 .banner-font {
-
  position: absolute;
  text-align: center;
  color: #fff;
@@ -308,7 +307,7 @@ font-size: 2.5rem;
 }
 
 /********/
-.categories a{
+.categories a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -320,26 +319,113 @@ font-size: 2.5rem;
   justify-content:center;
   display:flex;
   }
-/*
-  .categories {
-    display: flex;
-    flex-wrap: wrap;
-    text-transform: uppercase;
-  }
 
-  .rectangle-container {
-    max-width: 100%;
-    height: 12.5rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-     flex: 1 0 100%;
-     border: 4px solid #fff; 
-     flex-basis: 100%;
-     z-index:0
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
   }
  
-  .mens {
+.mens {
+ background: url(images/mens-category.jpg);
+ width: 100%;
+ height: 12rem;
+ display: flex; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ order: 0;
+ border-bottom: 3px solid white;
+ position: relative;
+ flex-basis: 100%;
+ /*justify-content: space-between;*/
+}
+
+.trends {
+background: url(images/trends-category.jpg);
+ width: 50%;
+ height: 12rem;
+ display: flex; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ order: 1;
+ border-bottom: 3px solid white;
+ position: relative;
+ flex-basis: 100%;
+ margin:0;
+ border-bottom: 3px solid white;
+ border-top: 3px solid white;
+ border-right: 3px solid white;
+ justify-content: center;
+ align-items: center;
+}
+
+.glasses {
+background: url(images/glasses-category.jpg);
+order: 3;
+border-bottom: 3px solid white;
+border-top: 3px solid white;
+border-right: 3px solid white;
+width: 50%;
+ height: 12rem;
+ display: flex; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+ flex-basis: 100%;
+ margin:0;
+ justify-content: center;
+ align-items: center;
+}
+
+.sale {
+background: url(images/sale-category.jpg);
+width: 50%;
+ height: 12rem;
+ display: flex; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ order: 1;
+ border-bottom: 3px solid white;
+ position: relative;
+ flex-basis: 100%;
+ margin:0;
+ border-bottom: 3px solid white;
+ border-top: 3px solid white;
+ border-right: 3px solid white;
+ justify-content: center;
+ align-items: center;
+}
+
+.bags {
+background: url(images/bags-category.jpg);
+width: 50%;
+ background-size: contain;
+background-repeat: no-repeat;
+margin:0;
+order: 5;
+border-bottom: 3px solid white;
+border-top: 3px solid white;
+border-left: 3px solid white;
+padding:25%;
+}
+
+.women {
+background: url(images/womens-category.jpg);
+width: 100%;
+ height: 12rem;
+ display: flex; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ order: 0;
+ border-bottom: 3px solid white;
+ position: relative;
+ flex-basis: 100%;
+order: 6;
+border-top: 3px solid white;
+padding:25%;
+}
+
+/*.mens {
     background: url(images/mens-category.jpg);
     order: 0;
     border-bottom: 3px solid white;
@@ -354,7 +440,7 @@ flex-basis: 100%;
   .square-container {
  width: 50%;
     height: 12.5rem;
-    background-size: cover;
+    background-size: cover cover;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
@@ -387,102 +473,15 @@ order: 4;
 }
 */
 
-
-.categories-container {
-display: flex;
-flex-wrap: wrap;
-flex-flow: wrap;
-justify-content: space-between;
-background-color: magenta;
+.product-info {
+padding-bottom: 2.5rem;
 }
 
-.mens {
-background: url(images/mens-category.jpg);
-width: 100%;
-display: flex; 
-background-size: cover;
-background-repeat: no-repeat;
-order: 1;
-justify-content: space-between;
-border-bottom: 3px solid white;
-height: 250px;
-flex-wrap: wrap;
-position: relative;
-
+.heading-container {
+  padding-top: 2.5rem;
 }
 
-.trends {
-background: url(images/trends-category.jpg);
-width: 50%;
- background-size: cover;
-background-repeat: no-repeat;
-margin:0;
-order: 2;
-border-bottom: 3px solid white;
-border-top: 3px solid white;
-border-right: 3px solid white;
-height:225px;
-order: 1;
-justify-content: center;
-align-items: center;
-}
-
-.glasses {
-background: url(images/glasses-category.jpg);
-width: 50%;
- background-size: cover;
-background-repeat: no-repeat;
-margin:0;
-order: 3;
-border-bottom: 3px solid white;
-border-top: 3px solid white;
-border-right: 3px solid white;
-height: 200px;
-order:2;
-justify-content: center;
-align-items: center;
-}
-
-.sale {
-background: url(images/sale-category.jpg);
-width: 50%;
- background-size: cover;
-background-repeat: no-repeat;
-margin:0;
-order: 4;
-border-bottom: 3px solid white;
-border-top: 3px solid white;
-border-right: 3px solid white;
-padding:25%;
-justify-content: center;
-align-items: center;
-}
-
-.bags {
-background: url(images/bags-category.jpg);
-width: 50%;
- background-size: contain;
-background-repeat: no-repeat;
-margin:0;
-order: 5;
-border-bottom: 3px solid white;
-border-top: 3px solid white;
-border-left: 3px solid white;
-padding:25%;
-}
-
-.women {
-background: url(images/womens-category.jpg);
-width: 100%;
-display: flex; 
-background-size: contain;
-background-repeat: no-repeat;
-order: 6;
-border-top: 3px solid white;
-padding:25%;
-}
-
-.product {
+.p {
 text-transform: uppercase;
 color: #969696;
 font-size: .75rem;
@@ -495,24 +494,12 @@ padding:25%;
 
 .carousel {
   width: 100%;
-  height:300px;
-  margin-right: 10px;
+  height:500px;
+  /*margin-right: 10px;*/
   border-radius: 5px;
   counter-increment: gallery-cell;
-}
-
-.carousel {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-
-}
-
-.price{
- color: #969696;
-font-weight: 700;
-text-align: center;
+ padding: 3rem 2rem;
+ text-align: center;
 }
 
 .updates-container {
@@ -532,7 +519,7 @@ text-align: center;
     font-weight: 400;
     line-height: 2;
     background: url(images/wave-bkgd.jpg);
-    min-width: auto;
+    /*min-width: auto;*/
     min-height: 400px;
 }
 
@@ -579,3 +566,11 @@ color: #fff;
   list-style: none;
   display: inline-flex;
 } 
+
+/*@media (min-width:600px){
+
+}
+
+@media (min-width:1240px){
+  
+}*/
