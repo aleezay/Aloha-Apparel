@@ -159,7 +159,9 @@ table {
 
 html{
   font-size: 14px;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
+
 }
 
 body button input {
@@ -308,6 +310,7 @@ font-size: 2.5rem;
 
 /********/
 .categories a {
+  width: 100%;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -320,12 +323,22 @@ font-size: 2.5rem;
   display:flex;
   }
 
-.categories {
+/*.categories {
   display: flex;
   flex-wrap: wrap;
+  flex-flow: row wrap;
+  flex: 1 0 100%;
   text-transform: uppercase;
-  }
- 
+  }*/
+
+.categories-container {
+width: 100%;
+display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  flex: 1 0 100%;
+  flex-basis: 100%;
+} 
 .mens {
  background: url(images/mens-category.jpg);
  width: 100%;
@@ -333,7 +346,7 @@ font-size: 2.5rem;
  display: flex; 
  background-size: cover;
  background-repeat: no-repeat;
- order: 0;
+ /*order: 0;*/
  border-bottom: 3px solid white;
  position: relative;
  flex-basis: 100%;
@@ -342,12 +355,12 @@ font-size: 2.5rem;
 
 .trends {
 background: url(images/trends-category.jpg);
- width: 50%;
+ max-width: 40%;
  height: 12rem;
  display: flex; 
  background-size: cover;
  background-repeat: no-repeat;
- order: 1;
+ /*order: 1;*/
  border-bottom: 3px solid white;
  position: relative;
  flex-basis: 100%;
@@ -361,11 +374,11 @@ background: url(images/trends-category.jpg);
 
 .glasses {
 background: url(images/glasses-category.jpg);
-order: 3;
+/*order: 3;*/
 border-bottom: 3px solid white;
 border-top: 3px solid white;
 border-right: 3px solid white;
-width: 50%;
+max-width: 40%;
  height: 12rem;
  display: flex; 
  background-size: cover;
@@ -384,7 +397,7 @@ width: 50%;
  display: flex; 
  background-size: cover;
  background-repeat: no-repeat;
- order: 1;
+ /*order: 1;*/
  border-bottom: 3px solid white;
  position: relative;
  flex-basis: 100%;
@@ -399,10 +412,11 @@ width: 50%;
 .bags {
 background: url(images/bags-category.jpg);
 width: 50%;
- background-size: contain;
+height: 12rem;
+background-size: contain;
 background-repeat: no-repeat;
 margin:0;
-order: 5;
+/*order: 5;*/
 border-bottom: 3px solid white;
 border-top: 3px solid white;
 border-left: 3px solid white;
@@ -416,11 +430,10 @@ background: url(images/womens-category.jpg);
  display: flex; 
  background-size: cover;
  background-repeat: no-repeat;
- order: 0;
  border-bottom: 3px solid white;
  position: relative;
  flex-basis: 100%;
-order: 6;
+/*order: 6;*/
 border-top: 3px solid white;
 padding:25%;
 }
