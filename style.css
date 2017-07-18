@@ -95,7 +95,6 @@ background-color: white;
 
 .p {
 padding: 2rem;
-
 }
 
 .navigation a {
@@ -157,6 +156,18 @@ left:50%;
  top: 50%;
  transform: translate(-50%,-50%);
  line-height: 1;
+}
+
+.about-container {
+  padding: 10% 5% 12% 5%;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: lighter;
 }
 
 .new-collection {
@@ -335,8 +346,9 @@ padding:15%;
     filter: brightness(95%);
     min-width: auto;
 }
-  .heavy {
-    font-weight: 700px;
+  .Styles {
+    font-weight: bold;
+
   }
 
 .updates {
