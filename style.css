@@ -70,7 +70,7 @@ background-color: white;
 .logo {
  align-self: flex-start;
  max-width: 120px;
- padding: 20px, 0, 20, 20;
+ padding: 20px, 0px, 20px, 20px;
  order: 1;
 }
 
@@ -85,7 +85,7 @@ background-color: white;
  justify-content:space-between;
  padding: .5rem;
  align-self: center;
- flex: 1, 0, auto;
+ flex: 0, auto;
  order: 3;
 }
 
@@ -95,7 +95,7 @@ padding: 2rem;
 
 .navigation a {
   font-family: 'Raleway', sans-serif;
-  weight: 400;
+  font-weight: 400;
   text-transform: uppercase;
   color: #e2574c;
   text-decoration: none;
@@ -117,7 +117,7 @@ li {
 ul {
     text-align: center;
     border-top: 1px solid #d7d7d7;
-    border-width: 100%;
+    border-width: 100px;
     padding-top: .75rem;
     display: inline-block;
     align-content: stretch;
@@ -169,7 +169,7 @@ left:50%;
  text-transform: uppercase;
  font-size: 1.25rem;
  font-family: Raleway-bold, sans-serif;
- font-weight: 500px;
+ font-weight: 500;
  align-content: center;
  margin-bottom: 1.5rem;
 }
@@ -418,12 +418,12 @@ input[type=submit]:hover {
 	display: none;
 	}
 
-@media screen and (min-width:600px) {
+/*@media screen and (min-width:600px) {
   font-size: 16px;}
 
 @media screen and (min-width:1240px) {
   font-size: 16px;
-  
+  */
 .header {
 	margin: 0px auto;
 	flex-wrap: none;
@@ -501,7 +501,7 @@ input[type=submit]:hover {
    z-index: 100000; /* above all content */
 }
 
-#main[tabindex="-1"]:focus {
+#about[tabindex="-1"]:focus {
    outline: 0;
 }
   
@@ -511,4 +511,3 @@ input[type=submit]:hover {
 	display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;*/
-}
